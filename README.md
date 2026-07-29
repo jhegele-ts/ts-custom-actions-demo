@@ -15,6 +15,11 @@ This web application demonstrates how custom actions work in ThoughtSpot.
 
 This demo is built **only** to showcase how code-based custom actions can be setup and used in ThoughtSpot. **This demo is not meant to illustrate best practices for anything outside of that scope.** Notably, this demo uses `AuthType.None` which is meant for development purposes only and should never be used in a production application.
 
+## Custom actions in this repo
+
+* Custom action definitions are part of the initialization function when embedding ThoughtSpot. In this repo they are located at [/src/components/ts-init/ts-init.ts](/src/components/ts-init/ts-init.ts#L24-L37)
+* Custom action listeners use an EmbedEvent and can be viewed at [/src/app/page.tsx](/src/app/page.tsx#L20-L22)
+
 ## Resources
 
 * [Code-based custom actions](https://developers.thoughtspot.com/docs/code-based-custom-action)
